@@ -1,0 +1,8 @@
+{
+    "dataset": "Fashion-MNIST",
+    "samples": 60000,
+    "features": 784,
+    "format": "csv",
+    "source": "keras dataset",
+    "missing_values": 0
+}
