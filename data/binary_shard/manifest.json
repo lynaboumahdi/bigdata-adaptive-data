@@ -1,0 +1,165 @@
+{
+    "dataset": "Fashion-MNIST",
+    "split": "train",
+    "total_samples": 60000,
+    "image_shape": [
+        28,
+        28
+    ],
+    "image_dtype": "uint8",
+    "label_dtype": "uint8",
+    "shard_size": 6000,
+    "num_shards": 10,
+    "shards": [
+        {
+            "shard_id": 0,
+            "start_index": 0,
+            "end_index": 6000,
+            "num_samples": 6000,
+            "image_file": "train_images_000.bin",
+            "label_file": "train_labels_000.bin",
+            "image_shape": [
+                6000,
+                28,
+                28
+            ],
+            "image_dtype": "uint8",
+            "label_dtype": "uint8"
+        },
+        {
+            "shard_id": 1,
+            "start_index": 6000,
+            "end_index": 12000,
+            "num_samples": 6000,
+            "image_file": "train_images_001.bin",
+            "label_file": "train_labels_001.bin",
+            "image_shape": [
+                6000,
+                28,
+                28
+            ],
+            "image_dtype": "uint8",
+            "label_dtype": "uint8"
+        },
+        {
+            "shard_id": 2,
+            "start_index": 12000,
+            "end_index": 18000,
+            "num_samples": 6000,
+            "image_file": "train_images_002.bin",
+            "label_file": "train_labels_002.bin",
+            "image_shape": [
+                6000,
+                28,
+                28
+            ],
+            "image_dtype": "uint8",
+            "label_dtype": "uint8"
+        },
+        {
+            "shard_id": 3,
+            "start_index": 18000,
+            "end_index": 24000,
+            "num_samples": 6000,
+            "image_file": "train_images_003.bin",
+            "label_file": "train_labels_003.bin",
+            "image_shape": [
+                6000,
+                28,
+                28
+            ],
+            "image_dtype": "uint8",
+            "label_dtype": "uint8"
+        },
+        {
+            "shard_id": 4,
+            "start_index": 24000,
+            "end_index": 30000,
+            "num_samples": 6000,
+            "image_file": "train_images_004.bin",
+            "label_file": "train_labels_004.bin",
+            "image_shape": [
+                6000,
+                28,
+                28
+            ],
+            "image_dtype": "uint8",
+            "label_dtype": "uint8"
+        },
+        {
+            "shard_id": 5,
+            "start_index": 30000,
+            "end_index": 36000,
+            "num_samples": 6000,
+            "image_file": "train_images_005.bin",
+            "label_file": "train_labels_005.bin",
+            "image_shape": [
+                6000,
+                28,
+                28
+            ],
+            "image_dtype": "uint8",
+            "label_dtype": "uint8"
+        },
+        {
+            "shard_id": 6,
+            "start_index": 36000,
+            "end_index": 42000,
+            "num_samples": 6000,
+            "image_file": "train_images_006.bin",
+            "label_file": "train_labels_006.bin",
+            "image_shape": [
+                6000,
+                28,
+                28
+            ],
+            "image_dtype": "uint8",
+            "label_dtype": "uint8"
+        },
+        {
+            "shard_id": 7,
+            "start_index": 42000,
+            "end_index": 48000,
+            "num_samples": 6000,
+            "image_file": "train_images_007.bin",
+            "label_file": "train_labels_007.bin",
+            "image_shape": [
+                6000,
+                28,
+                28
+            ],
+            "image_dtype": "uint8",
+            "label_dtype": "uint8"
+        },
+        {
+            "shard_id": 8,
+            "start_index": 48000,
+            "end_index": 54000,
+            "num_samples": 6000,
+            "image_file": "train_images_008.bin",
+            "label_file": "train_labels_008.bin",
+            "image_shape": [
+                6000,
+                28,
+                28
+            ],
+            "image_dtype": "uint8",
+            "label_dtype": "uint8"
+        },
+        {
+            "shard_id": 9,
+            "start_index": 54000,
+            "end_index": 60000,
+            "num_samples": 6000,
+            "image_file": "train_images_009.bin",
+            "label_file": "train_labels_009.bin",
+            "image_shape": [
+                6000,
+                28,
+                28
+            ],
+            "image_dtype": "uint8",
+            "label_dtype": "uint8"
+        }
+    ]
+}
