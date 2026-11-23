@@ -1,19 +1,27 @@
+import numpy as np
 import pandas as pd
+import pyarrow as pa
+
 
 class ParquetLoader:
     def __init__(self, file_path):
-        self.data = pd.read_parquet(file_path)
+        data = pd.read_parquet(file_path)
 
-        self.images = self.data.drop(columns=["label"]).to_numpy()
-        self.labels = self.data["label"].to_numpy()
-        
+        # on garde seulement des tableaux uint8 (comme Binary et Mmap)
+        self.images = np.ascontiguousarray(data.drop(columns=["label"]).to_numpy(dtype=np.uint8))
+        self.labels = data["label"].to_numpy(dtype=np.uint8)
+
+        # on libère le DataFrame et la mémoire tampon de pyarrow
+        del data
+        pa.default_memory_pool().release_unused()
+
         print("Parquet Loader initialisé ! ")
-        print("nombres d'images : ",len(self.images))
+        print("nombres d'images : ", len(self.images))
 
-    def load_batch(self,indices):
+    def load_batch(self, indices):
 
         x_batch = self.images[indices]
-        x_batch = x_batch.reshape(-1,28,28)
+        x_batch = x_batch.reshape(-1, 28, 28)
         y_batch = self.labels[indices]
 
-        return x_batch,y_batch
+        return x_batch, y_batch

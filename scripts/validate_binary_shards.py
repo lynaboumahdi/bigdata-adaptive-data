@@ -2,8 +2,8 @@ import numpy as np
 import json
 from pathlib import Path
 
-RAW_DIR = Path("dat/raw")
-SHARD_DIR = Path("data/binary_shards")
+RAW_DIR = Path("data/raw")
+SHARD_DIR = Path("data/binary_shard")
 
 original_images = np.load(RAW_DIR / "x_train.npy")
 original_labels = np.load(RAW_DIR / "y_train.npy")
